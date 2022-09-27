@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2 rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: orange;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    padding: 10px;
+}
+
+.container .row img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer{
+    background-color: blue;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}

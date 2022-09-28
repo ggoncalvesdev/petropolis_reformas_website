@@ -2,66 +2,119 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="img/logo.jpg" type="imagem/jpg">
-        <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Fonte -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+        <!-- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <!-- Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/73741e02c5.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="js/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         <title>Petrópolis Reformas</title>
     </head>
-
     <body>
-        <div class="container">
-            <header class="header">
-                <a href="">Logo</a>
-                    <nav>
-                        <ul class="menu">
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="">Contato</a>
-                            </li>
-                        </ul>
-                    
-                    </nav>
-           
-           </header>
-         </div>
-
-         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <img src="img/paginicial.png" alt="Tijolos assentados">
+        <header>
+            <div class="container" id="nav-container">
+                <nav class="navbar navbar-expand-lg fixed-top">
+                    <a href="#" class="navbar-brand">
+                        <img id="logo" src="img/logo.jpg" alt="Logo Petrópolis Reforma" /> Petrópolis Reforma
+                    </a>
+                    <!-- Menu hambúrguer -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbar-links"
+                        aria-controls="navbar-links"
+                        aria-expanded="false"
+                        aria-label="toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" id="home-menu">HOME </a>
+                            <a class="nav-item nav-link" id="about-menu">QUEM SOMOS </a>
+                            <a href="html/portifolio.html" class="nav-item nav-link" id="portfolio-menu">PORTFÓLIO </a>
+                            <a class="nav-item nav-link" id="contact-menu">CONTATO </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div id="video">
+                    <video src="video/video-home.mp4" type="video/mp4" autoplay loop width="100%"></video>
+                </div>
+                <!-- Sobre a empresa -->
+                <div id="about-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="main-title">Sobre a Petrópolis Reformas</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="img/img-sobre.jpg" alt="construção ilustrativa" />
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="about-title">Construindo o seu sonho</h3>
+                                <p>
+                                    Preparamos laudos de engenharia com foco nas melhores soluções técnicas e econômicas
+                                    para diversas finalidades.
+                                </p>
+                                <p>
+                                    Realizamos consultoria técnica em edificações com a finalidade de solucionar
+                                    questões relacionadas a projeto, instalação, inspeção, gerenciamento e manutenção
+                                    dos empreendimentos.
+                                </p>
+                                <p>
+                                    Trabalhamos na análise técnica para identificar o valor de um bem, de seus custos,
+                                    frutos e direitos, para os seguintes objetivos
+                                </p>
+                                <p>Veja outros diferenciais:</p>
+                                <ul id="about-list">
+                                    <li><i class="fas fa-check"></i>Cautelar de vizinhança</li>
+                                    <li><i class="fas fa-check"></i>Estudo de viabilidade técnica</li>
+                                    <li><i class="fas fa-check"></i>Plano de manutenção</li>
+                                    <li><i class="fas fa-check"></i>Vistoria predial</li>
+                                    <li><i class="fas fa-check"></i>Compra e venda</li>
+                                    <li><i class="fas fa-check"></i>Aluguel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-         </div>
-
-        <div class="container">
-            <footer>
-
-                    <div class="container">
-                        <ul>
-                            <li>
-                                <p>PETRÓPOLIS REFORMAS LTDA</p>
-                            </li>
-                            <li>
-                                CNPJ: 40.555.999/0001-20
-                            </li>
-                            <li>
-                                Contato - (24) 2222-5555
-                            </li>
-                            <li>
-                                E-mail - petropolisreformas@gmail.com
-                            </li>
-                         </ul>
-                
-                </div>
-            </footer>
-        </div>
+        </main>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

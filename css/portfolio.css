@@ -1,0 +1,208 @@
+/* Gerais */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p,
+li {
+    color: #444;
+    font-size: 14px;
+    padding: 10px;
+}
+a {
+    padding: 10px;
+}
+
+/* Barra de navegação */
+header,
+.navbar {
+    background-color: #353d41;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 0.8rem;
+}
+
+.nav-item.active {
+    border-bottom: 3px solid #fff;
+}
+
+/* Titulo */
+.container-fluid {
+    padding: 0;
+}
+#services-area {
+    background-color: #e2e2e2;
+}
+
+.main-title {
+    color: #444;
+    padding: 50px;
+    margin: 0 0 35px 0;
+    margin-top: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Portfólio */
+.box-portfolio {
+    display: flex;
+    align-items: center;
+}
+
+.img-portfolio-left,
+.img-portfolio-right {
+    position: relative;
+    right: 12px;
+    width: 36.5rem;
+    height: 21.6rem;
+}
+/* Posições */
+.img-portfolio-right {
+    position: relative;
+    left: 100%;
+}
+
+.text-position-right {
+    position: relative;
+    left: 1em;
+    text-align: center;
+}
+
+.text-position-left {
+    position: relative;
+    right: 36em;
+    text-align: center;
+}
+
+/* Outros Serviços */
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i,
+.service-box h4 {
+    transition: 0.5s;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.service-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i,
+.service-box:hover > h4 {
+    color: #65daf9;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-footer {
+    padding-bottom: 1em;
+}
+
+.footer__logo-img {
+    width: 10em;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 0.75rem;
+}
+
+.footer__social-link {
+    display: inline-flex;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    color: #444;
+    font-size: 1rem;
+}
+
+.footer__social-link:hover {
+    color: #65daf9;
+}
+
+.footer__content > ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.footer__a {
+    font-size: 1rem;
+    color: black;
+    transition: 0.3s;
+}
+
+.footer__p {
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.footer__a:hover {
+    color: #65daf9;
+}
+
+.footer__copy {
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 4.5rem;
+}

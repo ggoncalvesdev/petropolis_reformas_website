@@ -1,120 +1,219 @@
 /* Gerais */
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .row {
-  margin: 0;
+    margin: 0;
 }
 
 .container {
-  padding: 70px 0;
+    padding: 70px 0;
 }
 
 p,
 li {
-  color: #444;
-  font-size: 14px;
+    color: #444;
+    font-size: 14px;
 }
 
 /* Barra de navegação */
 header,
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #logo {
-  width: 75px;
+    width: 75px;
 }
 
 .navbar-brand {
-  padding: 0;
-  color: #fff;
+    padding: 0;
+    color: #fff;
 }
 
 .navbar-brand:hover {
-  color: #fff;
+    color: #fff;
 }
 
 #navbar-links a {
-  color: #fff;
+    color: #fff;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 1rem 0.8rem;
+    padding: 1rem 0.8rem;
 }
 
 .nav-item.active {
-  border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+/* Slider */
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.main-btn {
+    background-color: #65daf9;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border-color: #3ec1d5;
+}
+
+.carousel-indicators .active {
+    background-color: #65daf9;
 }
 
 /* Sobre a empresa */
-
 #about-area {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 .main-title {
-  color: #444;
-  margin: 0 0 65px 0;
-  font-size: 40px;
-  text-align: center;
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
 }
 
 .main-title::after {
-  content: "";
-  border-top: 2px solid #333;
-  width: 15%;
-  position: absolute;
-  top: 60%;
-  left: 42.5%;
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    left: 42.5%;
 }
 
 .about-title {
-  font-size: 17px;
-  color: #444;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #about-list {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 #about-list li {
-  line-height: 30px;
+    line-height: 30px;
 }
 
 #about-list i {
-  color: #65daf9;
-  margin-right: 15px;
+    color: #65daf9;
+    margin-right: 15px;
 }
 
 .galery {
-  width: 100%;
-  height: 100%;
-  margin: auto;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 .description {
-  position: absolute;
-  text-align: center;
-  font-size: clamp(1em, 6vw, 10em);
-  -webkit-text-stroke: 1px black;
-  width: 100%;
-  margin-top: -35%;
-  padding: 5px;
-  color: whitesmoke;
-  z-index: 10;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(1em, 6vw, 10em);
+    -webkit-text-stroke: 1px black;
+    width: 100%;
+    margin-top: -35%;
+    padding: 5px;
+    color: whitesmoke;
+    z-index: 10;
 }
 
 .opacidade {
-  filter: brightness(0.4);
-  z-index: 9;
+    filter: brightness(0.4);
+    z-index: 9;
+}
+
+/* Entre na equipe */
+#apply-area {
+    height: 500px;
+}
+
+#apply-area .container-fluid,
+#apply-area .row {
+    height: 100%;
+}
+
+#apply-area .apply-box {
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#img-empresa {
+    background-image: url("../img/empresa.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+#ajuste-img h4,
+#ajuste-img p {
+    color: #fff;
+}
+
+#ajuste-img h4 {
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#ajuste-img p {
+    margin-bottom: 20px;
+}
+
+#saiba-mais-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+#saiba-mais-btn:hover {
+    border-color: #65daf9;
 }
